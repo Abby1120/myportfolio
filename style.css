@@ -6,7 +6,7 @@ body{
 .home {
     width: 100%;
     height: 100vh;
-    background-image: url(../images/background.jpg);
+    background-image: url("https://github.com/Abby1120/myportfolio/blob/master/images/background.jpg?raw=true");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -146,7 +146,7 @@ body{
     /* grid-row: 2;
     grid-column: 1; */
     background-color: #f3f3f3;
-    background-image: url("../images/Myersfreelanceres.png");
+    background-image: url("https://github.com/Abby1120/myportfolio/blob/master/images/Myersfreelanceres.png?raw=true");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; 
@@ -157,7 +157,7 @@ body{
     /* grid-row: 2;
     grid-column: 2; */
     background-color: #f3f3f3;
-    background-image: url("../images/coffeeprofile.png");
+    background-image: url("https://github.com/Abby1120/myportfolio/blob/master/images/coffeeprofile.png?raw=true");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -176,14 +176,14 @@ body{
   }
   .row4-column1 {
     background-color: #f3f3f3;
-    background-image: url("../images/abbwoomockup.png");
+    background-image: url("https://github.com/Abby1120/myportfolio/blob/master/images/abbwoomockup.png?raw=true");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
   .row4-column2 {
     background-color: #f3f3f3;
-    background-image: url("../images/smartmockups_jz3frkao.png");
+    background-image: url("https://github.com/Abby1120/myportfolio/blob/master/images/smartmockups_jz3frkao.png?raw=true");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
