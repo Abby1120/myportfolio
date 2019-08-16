@@ -36,11 +36,13 @@ body{
     font-size: 1.2em;
   }
 
+  .navbar .icon {
+    display: none;
+  }
+
   .name {
     width:500px;
-    /* height:500px; */
     margin:0 auto;
-    /* background:#f7f7f7; */
     position:absolute;
     left:50%;
     top:50%;
@@ -50,11 +52,12 @@ body{
     color: white;
     text-shadow: .3em .3em 1em #c4dde7;
    }
+   
 
 .name > h1 {
     font-family: 'Lato', sans-serif;
     font-size: 4em;
-    margin-top: 20%;
+    margin-top: 12%;
     margin-bottom: 0;
  }
 
@@ -73,14 +76,12 @@ body{
 
 .projects-wrapper {
    display: flex;  
-   /* background-color: orange; */
    flex-direction: row;
    height: 80vh;
    padding-bottom: 4%;
   }
   
   .link-holder {
-    /* background-color: blue; */
     height: 80vh;
     width: 20%;
     text-align: center;
@@ -109,21 +110,19 @@ body{
 
   ul li {
     padding-top: 10%;
-    /* padding-bottom: 10%; */
   }
 
-  .grid {
+  .grid {   
     width: 77%;
     height: 80vh;
     background-color: #f3f3f3;
     padding-bottom: 2%;
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: .3fr 1fr .3fr 1fr; 
-     grid-column-gap: 2%;
-    grid-row-gap: 0px; 
+    grid-template-rows: .3fr 1fr .3fr 1fr;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
     
   }
   
@@ -137,7 +136,6 @@ body{
     background-color: #f3f3f3;
     padding-top: 7%;
    
-
 }
   
   .row2-column1 {
@@ -184,6 +182,8 @@ body{
 
   }
 
+  /* About Me */
+
 .about {
   width: 100%;
   height: auto;
@@ -209,6 +209,8 @@ h3 {
     font-weight: bold;
 }
 
+/* Footer */
+
 footer {
   display: flex;
   flex-direction: row;
@@ -216,27 +218,35 @@ footer {
   background-color: grey;
   align-items: center;
   justify-content: space-evenly;
-  padding-left: 3vw;
 }
 
 .logo { 
   height: 10vh;
   padding-top: 2%;
   padding-bottom:2%;
+  padding-left: 7%;
  }
 
 .email {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   font-weight: bold;
+  padding-left: 5%;
 }
 
 .phone {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   font-weight: bold;
+  margin-left: 6%;
 }
 
+  @media (min-width: 1023px) {
+    .logo {
+      padding-left: 3%;
+    }
+  }
+  
   @media (max-width: 770px){
     .projects-wrapper {
       flex-direction: column;
@@ -245,7 +255,8 @@ footer {
 
     .link-holder {
       width: 100%;
-      margin-bottom: -25%;
+      height: auto;
+      margin-bottom: 7%;
 }
 
     .link-holder h2 {
@@ -273,30 +284,127 @@ footer {
     
     .grid {
       width: 100vw;
+      font-size: .9em;
     }
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 500px) {
     .home {
-      height: 15vh;
+      height: 18vh;
       background-image: none;
       
     }
-    
+
+    .navbar {
+      background-color:	#2A9EC3;
+    }
+ 
     .info {
       flex-direction: column;
       justify-content: center;
     }
 
-    .projects-wrapper {
-      width:
+    .name {
+      width: 100%;
+      position:absolute;
+      left:0;
+      top:9%;
+      margin-left: 0%;
+      margin-top: 0%;
+      margin-right:0;
+      text-align: center; 
+      color: black;
+      text-shadow: .1em .1em .1em #525455;
+    }
+
+    .name > h1 {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.5em;
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+
+   .name > p {
+    font-family: 'Roboto', sans-serif;
+    font-size: .8em;
+ }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 0;
+    }
+
+    ul li {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .cp {
+      padding-left: 0;
     }
     
     .link-holder{
-
+      margin-bottom: 0;
     }
 
     .grid {
-
+      grid-template-columns: 1fr; 
+      grid-template-rows: .3fr 1.6fr .3fr 1.9fr .3fr 1.3fr .3fr 1.4fr;
+      font-size: 12px;
+      grid-row-gap: .8%;
+      height: 800px;
     }
+
+    .row1-column1 {
+      padding-top: 1%;
+    }
+
+    .row1-column2 {
+      padding-top: 1%;
+    }
+    
+    .row2-column1 {
+      grid-row: 2;
+    }
+
+    .row2-column2 {
+      padding-top: 1%;
+    }
+
+    .row3-column1 {
+      padding-top: 1%;
+    }
+
+    .row3-column2 {
+      padding-top: 1%;
+    }
+
+    .row4-column1 {
+      grid-row: 6;
+    }
+
+    footer {
+      flex-direction: column;
+      font-size: .7em;
+    }
+    
+    .logo {
+      order: -1;
+      height: 8vh;
+      padding-bottom: .5%;
+      padding-left: 0;
+    }
+
+    .email {
+      padding-bottom: 1%;
+      padding-left: 0;
+    }
+
+    .phone {
+      margin-left: 0; 
+    }
+  
   }
+
