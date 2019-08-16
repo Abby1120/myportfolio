@@ -246,7 +246,7 @@ footer {
       padding-left: 3%;
     }
   }
-  
+
   @media (max-width: 770px){
     .projects-wrapper {
       flex-direction: column;
@@ -297,6 +297,7 @@ footer {
 
     .navbar {
       background-color:	#2A9EC3;
+      position: fixed;
     }
  
     .info {
@@ -306,15 +307,16 @@ footer {
 
     .name {
       width: 100%;
-      position:absolute;
-      left:0;
-      top:9%;
+      position: fixed;
+      background-color: white;
+      left: 0;
+      top: 9%;
       margin-left: 0%;
-      margin-top: 0%;
+      margin-top: -1.5%;
       margin-right:0;
       text-align: center; 
       color: black;
-      text-shadow: .1em .1em .1em #525455;
+      text-shadow: .1em .1em .05em #525455;
     }
 
     .name > h1 {
