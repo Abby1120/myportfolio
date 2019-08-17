@@ -324,12 +324,17 @@ footer {
       font-size: 1.5em;
       margin-top: 0;
       margin-bottom: 0;
+      padding-top: 2%;
    }
 
    .name > p {
     font-family: 'Roboto', sans-serif;
     font-size: .8em;
  }
+
+    .mobile {
+      margin-top: 6%;
+    }
 
     ul {
       display: flex;
